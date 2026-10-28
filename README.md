@@ -1,8 +1,8 @@
 # Leo CocoaPods Specs
 
-Aeris / LeoURN 的公开 CocoaPods Specs 分发仓库。当前处于发布准备阶段，候选规格保存在 Candidates，尚未进入正式 Specs 索引。
+Aeris / LeoURN 的公开 CocoaPods Specs 分发仓库。预览规格已进入 Specs 索引：AerisContracts / Aeris / AerisHost 0.25.0、LeoURN 0.1.0。源码固定为公开完整 commit。npm 包的上传和安装验收单独记录。
 
-准备完成后，接入方在 Podfile 添加：
+接入方在 Podfile 添加：
 
 ```ruby
 source 'https://github.com/zhangguozhong/leo-podspecs.git'
