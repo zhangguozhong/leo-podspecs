@@ -11,7 +11,7 @@
   "authors": "Aeris",
   "source": {
     "git": "https://github.com/zhangguozhong/aeris-sdk.git",
-    "commit": "9c8c96fe3f8e10f30a82e6ff9910199c92b75ca9"
+    "commit": "e1257acd6507fd220f1e5b5d39751501ef87eabe"
   },
   "platforms": {
     "ios": "15.0"

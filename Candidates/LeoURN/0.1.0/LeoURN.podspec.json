@@ -11,7 +11,7 @@
   "authors": "zhangguozhong",
   "source": {
     "git": "https://github.com/zhangguozhong/leo-urn.git",
-    "commit": "90cdc63c7beedc05ec88528ca3d2896340eb6a79"
+    "commit": "e210030bab75cdc21bc1adf7c6ac384b8f391fac"
   },
   "platforms": {
     "ios": "15.1"
