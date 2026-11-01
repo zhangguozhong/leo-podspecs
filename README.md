@@ -14,3 +14,5 @@ Aeris 的原生依赖通过此仓库解析。React Native 插件和 LeoURN 通�
 Swift 的容器模块仍使用 `import URN`，Pod 名为 LeoURN。React Native 基线为 0.87.0 / React 19.2.3 / iOS 15.1+。
 
 正式 Specs 应使用不可变 tag 或完整 commit，已经发布的同版本规格不覆盖。Candidates 不代表版本已正式发布，也不应加入生产依赖。
+
+新预览规格：AerisContracts/Aeris/AerisHost `0.26.0-preview.1`、LeoURN `0.2.0-preview.1`。源码使用对应不可变公开tag；已有0.25.0/0.1.0规格保留。npm使用next，latest不变。
