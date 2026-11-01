@@ -1,20 +1,34 @@
 # Leo CocoaPods Specs
 
-Aeris / LeoURN 的公开 CocoaPods Specs 分发仓库。预览规格已进入 Specs 索引：AerisContracts / Aeris / AerisHost 0.25.0、LeoURN 0.1.0。源码固定为公开完整 commit。npm 包的上传和安装验收单独记录。
+Aeris 和 LeoURN 的 CocoaPods Specs 索引，供 iOS 原生工程、React Native 和 Flutter 插件解析原生依赖。
 
-接入方在 Podfile 添加：
+## 配置 Podfile
 
 ```ruby
 source 'https://github.com/zhangguozhong/leo-podspecs.git'
 source 'https://cdn.cocoapods.org/'
+
+platform :ios, '15.0'
+
+pod 'AerisContracts', '= 0.26.0-preview.2'
+pod 'Aeris/Core', '= 0.26.0-preview.2'
 ```
 
-Aeris 的原生依赖通过此仓库解析。React Native 插件和 LeoURN 通常从 npm 安装后自动链接；不要为同名 Pod 再声明不同的 Git 或 :path 来源。
+按需选择 `Aeris/UIKitContext`、`Aeris/Transports`、`AerisHost/Web`、`AerisHost/Unity`、`AerisHost/ReactNative` 或 `AerisHost/Flutter`。
 
-Swift 的容器模块仍使用 `import URN`，Pod 名为 LeoURN。React Native 基线为 0.87.0 / React 19.2.3 / iOS 15.1+。
+RN/Flutter 插件通常由各自平台工具自动链接。使用 npm 包 `leo-urn` 时，`LeoURN` 和 `AerisRN` 由 RN 自动链接，Podfile 保留上面的源配置，不要重复声明其他来源的同名 Pod。URN 最低 iOS `15.1`，Swift 模块名为 `URN`。
 
-正式 Specs 应使用不可变 tag 或完整 commit，已经发布的同版本规格不覆盖。Candidates 不代表版本已正式发布，也不应加入生产依赖。
+## 版本
 
-新预览规格：AerisContracts/Aeris/AerisHost `0.26.0-preview.1`、LeoURN `0.2.0-preview.1`。源码使用对应不可变公开tag；已有0.25.0/0.1.0规格保留。npm使用next，latest不变。
+| 组件 | 当前版本 |
+|---|---|
+| AerisContracts / Aeris / AerisHost | `0.26.0-preview.2` |
+| LeoURN | `0.2.0-preview.3` |
 
-URN当前预览使用LeoURN `0.2.0-preview.2`，修复固定SemVer预览版本的基线校验；preview.1保留历史，不覆盖。同一套Aeris仍为0.26.0-preview.1。
+更新依赖后执行 `pod install`，通过生成的 `.xcworkspace` 打开应用。
+
+## 使用说明
+
+- [Aeris](https://github.com/zhangguozhong/aeris-sdk)
+- [URN](https://github.com/zhangguozhong/leo-urn)
+- [FlutterHull](https://github.com/zhangguozhong/flutter-hull)
