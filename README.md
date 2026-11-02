@@ -23,7 +23,7 @@ RN/Flutter 插件通常由各自平台工具自动链接。使用 npm 包 `leo-u
 | 组件 | 当前版本 |
 |---|---|
 | AerisContracts / Aeris / AerisHost | `0.26.0-preview.2` |
-| LeoURN | `0.2.0-preview.3` |
+| LeoURN | `0.3.0-preview.1` |
 
 更新依赖后执行 `pod install`，通过生成的 `.xcworkspace` 打开应用。
 
